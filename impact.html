@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Impact – Sharing Life’s Essentials</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #fdfbd3 40%, #f5efd0 100%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: #fdfbd3;
+      box-shadow: 0 2px 14px 0 rgba(154, 162, 40, 0.09);
+      padding: 1.5em 0 1em 0;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #BDB96A;
+      letter-spacing: 1px;
+      margin-left: 28px;
+    }
+    nav {
+      float: right;
+      margin-right: 38px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0e0e01;
+      margin: 0 0.95em;
+      font-weight: 600;
+      font-size: 1.08em;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffd572;
+    }
+    main {
+      padding: 2vw 0vw;
+      margin: 2vw auto 3vw;
+      max-width: 1100px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.45em;
+      color: #b28a23;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+      margin-top: 0.5em;
+      margin-bottom: 0.1em;
+    }
+    .impact-header {
+      text-align: center;
+      color: #66560c;
+      font-size: 1.13em;
+      max-width: 650px;
+      margin: auto;
+      margin-bottom: 1.7em;
+    }
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.3em 2em;
+      margin-bottom: 2.3em;
+    }
+    .impact-card {
+      background: #fffdf3;
+      border-radius: 1em;
+      box-shadow: 0 8px 32px rgba(180,155,38,0.11), 0 1.5px 10px rgba(49,39,19,0.1);
+      padding: 1.6em 1.4em 1.6em 1.3em;
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+      animation: cardFadeUp 1s cubic-bezier(.23,1.05,.32,1.01) both;
+    }
+    .impact-card:hover {
+      transform: translateY(-5px) scale(1.025);
+      box-shadow: 0 12px 36px rgba(195,168,34,0.15), 0 2px 15px rgba(200,160,45,0.16);
+    }
+    @keyframes cardFadeUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .impact-card img {
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px #f4e5a1bf;
+      border: 2.5px solid #ffe09a;
+      margin-bottom: 1.1em;
+      background: #faf6c3;
+    }
+    .impact-card h3 {
+      font-size: 1.29em;
+      color: #af870e;
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 0.6em;
+      letter-spacing: 0.2px;
+    }
+    .impact-card p {
+      color: #0b0b01;
+      font-size: 1.08em;
+      line-height: 1.4em;
+      margin: 0 auto;
+      max-width: 260px;
+    }
+    .infographic-section {
+      margin-top: 2.8em;
+      padding-bottom: 1.5em;
+      text-align: center;
+    }
+    .infographic-section h2 {
+      margin-bottom: 1.35em;
+      font-size: 1.35em;
+      font-weight: 900;
+      color: #6d6a12;
+      text-shadow: 0 0 4px #f5f0cdcc;
+      letter-spacing: 1px;
+    }
+    .infographics {
+      display: flex;
+      justify-content: center;
+      gap: 2em 1.5em;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 1.3em;
+    }
+    .infographic {
+      background: #faf5cb;
+      border-radius: 1em;
+      padding: 2.1em 1.6em;
+      min-width: 200px;
+      box-shadow: 0 2.5px 20px rgba(154, 162, 40, 0.11),0 1px 10px #eae3b790;
+      flex: 1 1 175px;
+      margin-bottom: 1.5em;
+      animation: fadeInScale 0.85s ease both;
+    }
+    .infographic h3 {
+      color: #54540d;
+      font-weight: 900;
+      font-size: 1.27em;
+      margin-bottom: 1.1em;
+      letter-spacing: 0.6px;
+    }
+    .infographic p {
+      font-size: 1.04em;
+      color: #6f611c;
+      line-height: 1.33em;
+      margin: 0 auto;
+      max-width: 246px;
+    }
+    @keyframes fadeInScale {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+    /*footer {
+      text-align: center;
+      padding: 2em 1em 1.3em 1em;
+      background: #BDB96A
+      color: #5a5602;
+      font-weight: 600;
+      font-size: 1em;
+      letter-spacing: 1px;
+      margin-top: 3em;
+      box-shadow: inset 0 2.5px 13px #fbf6c0a8;
+    }*/
+    footer a {
+      color: #6b6824;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0 0.7em;
+      transition: color 0.25s;
+    }
+    footer a:hover { color: #cba809; }
+    @media (max-width: 680px) {
+      nav, .logo {float:none; text-align:center;}
+      .impact-grid, .infographics { gap:1.2em; }
+      main { padding: 3vw 1.2vw;}
+      .infographic, .impact-card {padding: 1.5em 0.7em;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">Carebridge</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="Donate.html">Donate</a>
+      <a href="payment.html">Payment</a>
+      <a href="impact.html">Impact</a>
+      <a href="join-us.html">Join Us</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Impact</h1>
+    <div class="impact-header">See how every donation and act of help builds hope, empowers lives, and creates a lasting impact in our communities.</div>
+    <section class="impact-grid" aria-label="Impact highlights and statistics">
+      <article class="impact-card" role="region" aria-labelledby="stat1-title">
+        <img src="img/donation box2.jpg" alt="Helping hands distributing essentials">
+        <h3 id="stat1-title">10,000 Essentials Delivered</h3>
+        <p>Successfully delivered over ten thousand essential items directly to people in need, ensuring basic necessities reach vulnerable families.</p>
+      </article>
+      <article class="impact-card" role="region" aria-labelledby="stat2-title">
+        <img src="img/volunteer group.jpg" alt="Volunteers packing food donations">
+        <h3 id="stat2-title">500 Active Volunteers</h3>
+        <p>Our dedicated network of volunteers actively participates in sorting, packing, and distributing donations every week to maximize impact.</p>
+      </article>
+      <article class="impact-card" role="region" aria-labelledby="stat3-title">
+        <img src="img/empowered familes.png" alt="Children receiving food packages">
+        <h3 id="stat3-title">Empowered 2,500 Families</h3>
+        <p>More than two thousand five hundred families empowered with food essentials, improving their quality of life sustainably.</p>
+      </article>
+      <article class="impact-card" role="region" aria-labelledby="stat4-title">
+        <img src="img/food waste.jpeg" alt="Food waste turned into compost">
+        <h3 id="stat4-title">Reduced Food Waste</h3>
+        <p>Through redistribution efforts, thousands of kilograms of food waste have been prevented for a greener planet.</p>
+      </article>
+      <article class="impact-card" role="region" aria-labelledby="stat4-title">
+        <img src="img/partnership.jpg" alt="Food waste turned into compost">
+        <h3 id="stat4-title">Building Partnerships</h3>
+        <p>Collaboration with local NGOs, businesses, and governmental agencies, leading to more comprehensive support systems for those in need.</p>
+      </article>
+      <article class="impact-card" role="region" aria-labelledby="stat4-title">
+        <img src="img/nutrition.jpg" alt="Food waste turned into compost">
+        <h3 id="stat4-title">Enhancing Health and Nutrition</h3>
+        <p>Timely distribution of food and hygiene products contributes directly to better health outcomes for beneficiaries.</p>
+      </article>
+      
+
+    </section>
+    <!--<section class="infographic-section" aria-label="Infographic impact statistics">
+      <h2>Real-Time Impact Metrics</h2>
+      <div class="infographics">
+        <div class="infographic" role="complementary" aria-label="Amount of food redistributed this year">
+          <h3>15,500 Kg Food Redistributed</h3>
+          <p>This year, our platform facilitated the redistribution of over fifteen thousand kilograms of surplus food to those in need.</p>
+        </div>
+        <div class="infographic" role="complementary" aria-label="Number of meals provided this year">
+          <h3>120,000 Meals Served</h3>
+          <p>Over one hundred thousand nutritious meals provided through coordinated food donations and delivery.</p>
+        </div>
+        <div class="infographic" role="complementary" aria-label="Carbon footprint reduction by redistribution">
+          <h3>500 Tonnes CO<sub>2</sub> Reduced</h3>
+          <p>By reducing food waste and surplus, greenhouse gas emissions have been significantly lowered to support climate action.</p>
+        </div>
+      </div>
+    </section>-->
+  </main>
+  <footer>
+    &copy; 2025 Carebridge
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact</a>
+  </footer>
+</body>
+</html>

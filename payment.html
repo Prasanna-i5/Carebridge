@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Carebridge</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span class="logo">Carebridge</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="Donate.html">Donate</a>
+      <a href="payment.html">Payment</a>
+      <a href="impact.html">Impact</a>
+     <!---- <a href="logistics.html">Logistics</a>-->
+      <a href="join-us.html">Join Us</a>
+    </nav>
+  </header>
+  <main style="padding:3vw;">
+    <h1>Payment / Donations</h1>
+    <p>Support our mission- your donation makes a real difference for those in need.</p>
+    <section>
+  <h2>Make a Donation</h2>
+  <form id="paymentForm" autocomplete="off" novalidate>
+    <label for="donorName">Full Name *</label>
+    <input type="text" id="donorName" name="donorName" placeholder="Your full name" required />
+
+    <label for="donorEmail">Email Address *</label>
+    <input type="email" id="donorEmail" name="donorEmail" placeholder="Your email" required />
+
+    <label for="donationAmount">Amount (INR) *</label>
+    <input type="number" id="donationAmount" name="donationAmount" placeholder="Enter amount to donate" min="1" required />
+
+    <label for="paymentMethod">Payment Method *</label>
+    <select id="paymentMethod" name="paymentMethod" required>
+      <option value="" disabled selected>Select a payment method</option>
+      <option value="creditCard">Credit Card</option>
+      <option value="debitCard">Debit Card</option>
+      <option value="netBanking">Net Banking</option>
+      <option value="upi">UPI</option>
+      <option value="wallet">Wallet</option>
+    </select>
+
+    <button type="submit">Donate Now</button>
+  </form>
+  <div id="confirmationMessage" class="confirmation"></div>
+</section>
+
+<section style="margin-top: 2em;">
+  <h2>Payment Procedure</h2>
+  <ol>
+    <li>Enter your details and donation amount in the form above.</li>
+    <li>Select your preferred payment method.</li>
+    <li>Click "Donate Now" to submit your payment securely.</li>
+    <li>Upon successful payment, receive a confirmation with a receipt via email.</li>
+    <li>Your donation will support food redistribution to reduce waste & hunger.</li>
+  </ol>
+</section>
+
+
+
+  </main>
+  <footer>
+    &copy; 2025 Carebridge | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact</a>
+  </footer>
+</body>
+</html>

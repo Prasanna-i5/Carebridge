@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>How It Works - Sharing life’s essentials</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Container for steps with fade-in animation */
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .step {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      max-width: 300px;
+      text-align: center;
+      flex: 1 1 280px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    /* Staggered animation delay */
+    .step:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .step:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .step:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    .step:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .step img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    p.description {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    /* Accent colors */
+    .step h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #2980b9;
+    }
+
+    /* Footer style for the links */
+    footer a {
+      color: #2980b9;
+      text-decoration: none;
+      margin: 0 0.4rem;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Repeat header nav from index.html -->
+  <header>
+    <span class="logo">Carebridge</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html" aria-current="page">How It Works</a>
+      <a href="Donate.html">Donate</a>
+      <a href="payment.html">Payment</a>
+      <a href="impact.html">Impact</a>
+      <!--<a href="logistics.html">Logistics</a>-->
+      <a href="join-us.html">Join Us</a>
+    </nav>
+  </header>
+  <main style="padding:3vw;">
+    <h1>How It Works</h1>
+    <p class="description">Our platform connects generous donors with people in need efficiently and transparently.
+      Follow the simple steps below to see how essential supplies move seamlessly from donation to delivery.</p>
+
+    <section class="steps" aria-label="Process steps to connect donors with recipients">
+      <article class="step" tabindex="0">
+        <img src="img/profile.jpeg" alt="Donor making a donation" />
+        <h2>1. Donor Pledges Essentials</h2>
+        <p>Donors select and pledge essential items they wish to contribute via our easy-to-use platform.</p>
+      </article>
+
+      <article class="step" tabindex="0">
+        <img src="img/verification.jpeg" alt="Verification process" />
+        <h2>2. Verification & Matching</h2>
+        <p>Our team verifies donor information and matches donations with verified recipients in need.</p>
+      </article>
+
+      <article class="step" tabindex="0">
+        <img src="img/transport.jpeg" alt="Logistics and transportation" />
+        <h2>3. Logistics & Distribution</h2>
+        <p>Partner organizations coordinate pickups and transport donations directly to distribution centers.</p>
+      </article>
+
+      <article class="step" tabindex="0">
+        <img src="img/Delivery.jpeg" alt="Donation delivery confirmation" />
+        <h2>4. Delivery & Impact</h2>
+        <p>Essential supplies reach recipients. Donors receive impact reports and stories of lives changed.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Sharing life’s essentials | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact</a>
+  </footer>
+</body>
+</html>
