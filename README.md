@@ -63,7 +63,7 @@ Sharing-life-s-essentials-platform/
 
 Visit the deployed project here:
 
-👉 https://prasanna-i5.github.io/Sharing-life-s-essentials-platform/
+👉 https://prasanna-i5.github.io/Carebridge/
 
 ---
 
