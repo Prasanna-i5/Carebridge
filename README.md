@@ -4,7 +4,7 @@
 A responsive web platform designed to connect donors, businesses, and non-profit organizations to reduce waste and help people in need by facilitating the donation of essential items.
 
 🔗 **Live Demo:**  
-https://prasanna-i5.github.io/Sharing-life-s-essentials-platform/
+https://prasanna-i5.github.io/Carebridge/
 
 ---
 
